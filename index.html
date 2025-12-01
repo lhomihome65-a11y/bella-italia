@@ -1,191 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella Italia - Italian & Nepali Fusion Restaurant</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Georgia, serif; line-height: 1.6; color: #333; }
-        header { background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
-        .logo { font-size: 1.8rem; font-weight: bold; color: #e74c3c; }
-        nav ul { display: flex; list-style: none; gap: 2rem; }
-        nav a { color: white; text-decoration: none; transition: color 0.3s; }
-        nav a:hover { color: #e74c3c; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600') center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; margin-top: 60px; }
-        .hero-content h1 { font-size: 4rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero-content p { font-size: 1.5rem; margin-bottom: 2rem; }
-        .btn { display: inline-block; padding: 1rem 2rem; background: #e74c3c; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; font-size: 1.1rem; }
-        .btn:hover { background: #c0392b; }
-        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
-        h2 { font-size: 2.5rem; text-align: center; margin-bottom: 3rem; color: #2c3e50; }
-        .about { background: #f8f9fa; }
-        .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .about-text { font-size: 1.1rem; }
-        .about-image { width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800') center/cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-        .menu-category { font-size: 2rem; color: #e74c3c; text-align: center; margin: 3rem 0 2rem 0; padding-bottom: 0.5rem; border-bottom: 3px solid #e74c3c; }
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
-        .menu-item { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .menu-item:hover { transform: translateY(-5px); }
-        .menu-item h3 { color: #e74c3c; margin-bottom: 0.5rem; font-size: 1.5rem; }
-        .menu-item p { color: #555; margin-bottom: 0.5rem; }
-        .menu-item .price { color: #27ae60; font-weight: bold; font-size: 1.3rem; margin-top: 0.5rem; }
-        .gallery { background: #f8f9fa; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
-        .gallery-item { height: 250px; background-size: cover; background-position: center; border-radius: 10px; transition: transform 0.3s; }
-        .gallery-item:hover { transform: scale(1.05); }
-        .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center; }
-        .contact-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
-        .contact-card h3 { color: #e74c3c; margin-bottom: 1rem; }
-        footer { background: #2c3e50; color: white; text-align: center; padding: 2rem; }
-        @media (max-width: 768px) { .hero-content h1 { font-size: 2.5rem; } .about-content { grid-template-columns: 1fr; } nav ul { gap: 1rem; font-size: 0.9rem; } }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella Italia - Kathmandu Restaurant</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,serif;line-height:1.6;color:#333}
+header{background:#1a252f;color:#fff;padding:1rem 0;position:fixed;width:100%;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.3)}
+nav{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 2rem}
+.logo{font-size:1.8rem;font-weight:bold;color:#dc143c}
+nav ul{display:flex;list-style:none;gap:2rem}
+nav a{color:#fff;text-decoration:none;transition:0.3s}
+nav a:hover{color:#dc143c}
+.hero{background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80') center/cover no-repeat;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;margin-top:60px}
+.hero-content h1{font-size:4.5rem;margin-bottom:1rem;text-shadow:3px 3px 6px rgba(0,0,0,0.8);animation:fadeIn 1s}
+.hero-content p{font-size:1.6rem;margin-bottom:2rem;text-shadow:2px 2px 4px rgba(0,0,0,0.8)}
+.btn{display:inline-block;padding:1.2rem 2.5rem;background:#dc143c;color:#fff;text-decoration:none;border-radius:8px;transition:0.3s;font-size:1.1rem;box-shadow:0 4px 15px rgba(220,20,60,0.4)}
+.btn:hover{background:#b01030;transform:translateY(-2px)}
+section{padding:5rem 2rem;max-width:1200px;margin:0 auto}
+h2{font-size:3rem;text-align:center;margin-bottom:3rem;color:#1a252f}
+.about{background:#f5f5f5}
+.about-content{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.about-text{font-size:1.15rem;line-height:1.8}
+.about-image{width:100%;height:450px;background:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=80') center/cover;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.25)}
+.menu-category{font-size:2.2rem;color:#dc143c;text-align:center;margin:3.5rem 0 2.5rem;padding-bottom:0.8rem;border-bottom:4px solid #dc143c;font-weight:bold}
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2.5rem;margin-bottom:4rem}
+.menu-item{background:#fff;padding:2.5rem;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.12);transition:0.3s;border-left:5px solid #dc143c}
+.menu-item:hover{transform:translateY(-8px);box-shadow:0 8px 30px rgba(0,0,0,0.2)}
+.menu-item h3{color:#dc143c;margin-bottom:0.8rem;font-size:1.6rem}
+.menu-item p{color:#666;margin-bottom:0.8rem;font-size:1.05rem}
+.menu-item .price{color:#228b22;font-weight:bold;font-size:1.5rem;margin-top:1rem}
+.gallery{background:#f5f5f5}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+.gallery-item{height:280px;background-size:cover;background-position:center;border-radius:12px;transition:0.3s;box-shadow:0 4px 15px rgba(0,0,0,0.15)}
+.gallery-item:hover{transform:scale(1.08);box-shadow:0 8px 25px rgba(0,0,0,0.3)}
+.contact-info{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2.5rem;text-align:center}
+.contact-card{background:#fff;padding:2.5rem;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.12);transition:0.3s}
+.contact-card:hover{transform:translateY(-5px)}
+.contact-card h3{color:#dc143c;margin-bottom:1.2rem;font-size:1.4rem}
+footer{background:#1a252f;color:#fff;text-align:center;padding:2.5rem}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:768px){.hero-content h1{font-size:2.8rem}.about-content{grid-template-columns:1fr}nav ul{gap:1rem;font-size:0.9rem}}
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">🍝🇳🇵 Bella Italia</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<nav>
+<div class="logo">🍝🇳🇵 Bella Italia</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Bella Italia</h1>
-            <p>Italian & Nepali Fusion Cuisine in Kathmandu</p>
-            <a href="#menu" class="btn">View Our Menu</a>
-        </div>
-    </section>
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>Bella Italia</h1>
+<p>Italian & Nepali Fusion Cuisine in Kathmandu</p>
+<a href="#menu" class="btn">View Our Menu</a>
+</div>
+</section>
 
-    <section id="about" class="about">
-        <h2>Our Story</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Welcome to Bella Italia, where Italian tradition meets authentic Nepali flavors. Located in the heart of Kathmandu, we bring you the best of both culinary worlds.</p>
-                <br>
-                <p>Our expert chefs combine traditional Italian recipes with beloved Nepali dishes, using fresh local ingredients and imported Italian specialties to create a unique dining experience.</p>
-                <br>
-                <p>Whether you're craving classic pasta or traditional dal bhat, we serve every dish with passion and authenticity. Join us for an unforgettable meal!</p>
-            </div>
-            <div class="about-image"></div>
-        </div>
-    </section>
+<section id="about" class="about">
+<h2>Our Story</h2>
+<div class="about-content">
+<div class="about-text">
+<p>Welcome to Bella Italia, where Italian tradition meets authentic Nepali flavors. Located in the heart of Kathmandu, we bring you the best of both culinary worlds.</p>
+<br>
+<p>Our expert chefs combine traditional Italian recipes with beloved Nepali dishes, using fresh local ingredients and imported Italian specialties to create a unique dining experience.</p>
+<br>
+<p>Whether you're craving classic pasta or traditional dal bhat, we serve every dish with passion and authenticity. Join us for an unforgettable meal!</p>
+</div>
+<div class="about-image"></div>
+</div>
+</section>
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        
-        <h3 class="menu-category">🍝 Italian Specialties</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <h3>Margherita Pizza</h3>
-                <p>Classic wood-fired pizza with fresh mozzarella, tomatoes, and basil</p>
-                <div class="price">Rs. 1,200</div>
-            </div>
-            <div class="menu-item">
-                <h3>Spaghetti Carbonara</h3>
-                <p>Traditional Roman pasta with eggs, pecorino cheese, and guanciale</p>
-                <div class="price">Rs. 1,400</div>
-            </div>
-            <div class="menu-item">
-                <h3>Lasagna Bolognese</h3>
-                <p>Layers of pasta with rich meat sauce, béchamel, and parmesan</p>
-                <div class="price">Rs. 1,600</div>
-            </div>
-            <div class="menu-item">
-                <h3>Risotto ai Funghi</h3>
-                <p>Creamy arborio rice with wild mushrooms and white wine</p>
-                <div class="price">Rs. 1,500</div>
-            </div>
-            <div class="menu-item">
-                <h3>Osso Buco</h3>
-                <p>Braised veal shanks in white wine with vegetables</p>
-                <div class="price">Rs. 2,200</div>
-            </div>
-            <div class="menu-item">
-                <h3>Tiramisu</h3>
-                <p>Classic Italian dessert with espresso and mascarpone cream</p>
-                <div class="price">Rs. 750</div>
-            </div>
-        </div>
+<section id="menu">
+<h2>Our Menu</h2>
 
-        <h3 class="menu-category">🇳🇵 Nepali Specialties</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <h3>Dal Bhat Set</h3>
-                <p>Traditional meal with lentil soup, rice, vegetable curry, pickle, and papad</p>
-                <div class="price">Rs. 450</div>
-            </div>
-            <div class="menu-item">
-                <h3>Momo (Chicken/Veg)</h3>
-                <p>Steamed dumplings with spiced filling, served with tomato chutney</p>
-                <div class="price">Rs. 350</div>
-            </div>
-            <div class="menu-item">
-                <h3>Newari Khaja Set</h3>
-                <p>Traditional platter with beaten rice, grilled meat, egg, and spicy potatoes</p>
-                <div class="price">Rs. 650</div>
-            </div>
-            <div class="menu-item">
-                <h3>Thukpa</h3>
-                <p>Hearty Tibetan noodle soup with vegetables and your choice of meat</p>
-                <div class="price">Rs. 400</div>
-            </div>
-            <div class="menu-item">
-                <h3>Sekuwa Set</h3>
-                <p>Grilled marinated meat with puffed rice, pickle, and roasted soybeans</p>
-                <div class="price">Rs. 550</div>
-            </div>
-            <div class="menu-item">
-                <h3>Juju Dhau</h3>
-                <p>Traditional sweet yogurt from Bhaktapur, creamy and delicious</p>
-                <div class="price">Rs. 200</div>
-            </div>
-        </div>
-    </section>
+<h3 class="menu-category">🍝 Italian Specialties</h3>
+<div class="menu-grid">
+<div class="menu-item">
+<h3>Margherita Pizza</h3>
+<p>Classic wood-fired pizza with fresh mozzarella, tomatoes, and basil</p>
+<div class="price">Rs. 1,200</div>
+</div>
+<div class="menu-item">
+<h3>Spaghetti Carbonara</h3>
+<p>Traditional Roman pasta with eggs, pecorino cheese, and guanciale</p>
+<div class="price">Rs. 1,400</div>
+</div>
+<div class="menu-item">
+<h3>Lasagna Bolognese</h3>
+<p>Layers of pasta with rich meat sauce, béchamel, and parmesan</p>
+<div class="price">Rs. 1,600</div>
+</div>
+<div class="menu-item">
+<h3>Risotto ai Funghi</h3>
+<p>Creamy arborio rice with wild mushrooms and white wine</p>
+<div class="price">Rs. 1,500</div>
+</div>
+<div class="menu-item">
+<h3>Osso Buco</h3>
+<p>Braised veal shanks in white wine with vegetables</p>
+<div class="price">Rs. 2,200</div>
+</div>
+<div class="menu-item">
+<h3>Tiramisu</h3>
+<p>Classic Italian dessert with espresso and mascarpone cream</p>
+<div class="price">Rs. 750</div>
+</div>
+</div>
 
-    <section id="gallery" class="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500')"></div>
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500')"></div>
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=500')"></div>
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=500')"></div>
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500')"></div>
-            <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500')"></div>
-        </div>
-    </section>
+<h3 class="menu-category">🇳🇵 Nepali Specialties</h3>
+<div class="menu-grid">
+<div class="menu-item">
+<h3>Dal Bhat Set</h3>
+<p>Traditional meal with lentil soup, rice, vegetable curry, pickle, and papad</p>
+<div class="price">Rs. 450</div>
+</div>
+<div class="menu-item">
+<h3>Momo (Chicken/Veg)</h3>
+<p>Steamed dumplings with spiced filling, served with tomato chutney</p>
+<div class="price">Rs. 350</div>
+</div>
+<div class="menu-item">
+<h3>Newari Khaja Set</h3>
+<p>Traditional platter with beaten rice, grilled meat, egg, and spicy potatoes</p>
+<div class="price">Rs. 650</div>
+</div>
+<div class="menu-item">
+<h3>Thukpa</h3>
+<p>Hearty Tibetan noodle soup with vegetables and your choice of meat</p>
+<div class="price">Rs. 400</div>
+</div>
+<div class="menu-item">
+<h3>Sekuwa Set</h3>
+<p>Grilled marinated meat with puffed rice, pickle, and roasted soybeans</p>
+<div class="price">Rs. 550</div>
+</div>
+<div class="menu-item">
+<h3>Juju Dhau</h3>
+<p>Traditional sweet yogurt from Bhaktapur, creamy and delicious</p>
+<div class="price">Rs. 200</div>
+</div>
+</div>
+</section>
 
-    <section id="contact">
-        <h2>Visit Us</h2>
-        <div class="contact-info">
-            <div class="contact-card">
-                <h3>📍 Location</h3>
-                <p>123 Italian Street<br>Thamel, Kathmandu<br>Nepal</p>
-            </div>
-            <div class="contact-card">
-                <h3>📞 Phone</h3>
-                <p>+977 1234567890<br>Reservations Welcome</p>
-            </div>
-            <div class="contact-card">
-                <h3>🕐 Hours</h3>
-                <p>Mon-Fri: 11am - 10pm<br>Sat-Sun: 10am - 11pm</p>
-            </div>
-            <div class="contact-card">
-                <h3>✉️ Email</h3>
-                <p>info@bellaitalia.com<br>reservations@bellaitalia.com</p>
-            </div>
-        </div>
-    </section>
+<section id="gallery" class="gallery">
+<h2>Gallery</h2>
+<div class="gallery-grid">
+<div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80')"></div>
+<div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80')"></div>
+<div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80')"></div>
+<div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?w=600&q=80')"></div>
+<div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80')"></div>
+<div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80')"></div>
+</div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Bella Italia - Italian & Nepali Fusion Restaurant | Kathmandu, Nepal | Crafted with ❤️ on Bhindi</p>
-    </footer>
+<section id="contact">
+<h2>Visit Us</h2>
+<div class="contact-info">
+<div class="contact-card">
+<h3>📍 Location</h3>
+<p>123 Italian Street<br>Thamel, Kathmandu<br>Nepal</p>
+</div>
+<div class="contact-card">
+<h3>📞 Phone</h3>
+<p>+977 1234567890<br>Reservations Welcome</p>
+</div>
+<div class="contact-card">
+<h3>🕐 Hours</h3>
+<p>Mon-Fri: 11am - 10pm<br>Sat-Sun: 10am - 11pm</p>
+</div>
+<div class="contact-card">
+<h3>✉️ Email</h3>
+<p>info@bellaitalia.com<br>reservations@bellaitalia.com</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Bella Italia - Italian & Nepali Fusion Restaurant | Kathmandu, Nepal | Crafted with ❤️ on Bhindi</p>
+</footer>
 </body>
 </html>
