@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bella Italia - Authentic Italian Cuisine</title>
+    <title>Bella Italia - Authentic Italian & Nepali Cuisine</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; }
@@ -24,7 +24,9 @@
         .about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
         .about-text { font-size: 1.1rem; }
         .about-image { width: 100%; height: 400px; background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800') center/cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .menu-section { margin-bottom: 3rem; }
+        .menu-category { font-size: 2rem; color: #e74c3c; text-align: center; margin-bottom: 2rem; border-bottom: 3px solid #e74c3c; padding-bottom: 0.5rem; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
         .menu-item { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
         .menu-item:hover { transform: translateY(-5px); }
         .menu-item h3 { color: #e74c3c; margin-bottom: 0.5rem; font-size: 1.5rem; }
@@ -42,9 +44,33 @@
 </head>
 <body>
     <header><nav><div class="logo">🍝 Bella Italia</div><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#menu">Menu</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></nav></header>
-    <section id="home" class="hero"><div class="hero-content"><h1>Bella Italia</h1><p>Experience Authentic Italian Cuisine</p><a href="#menu" class="btn">View Our Menu</a></div></section>
-    <section id="about" class="about"><h2>Our Story</h2><div class="about-content"><div class="about-text"><p>Welcome to Bella Italia, where tradition meets passion. Since our opening, we've been dedicated to bringing the authentic flavors of Italy to your table.</p><br><p>Our chefs use only the finest ingredients, imported directly from Italy, combined with locally sourced fresh produce to create dishes that transport you straight to the heart of Rome, Florence, and Naples.</p><br><p>Every meal is prepared with love, care, and generations of Italian culinary expertise. Join us for an unforgettable dining experience.</p></div><div class="about-image"></div></div></section>
-    <section id="menu"><h2>Our Menu</h2><div class="menu-grid"><div class="menu-item"><h3>Margherita Pizza</h3><p>Classic pizza with fresh mozzarella, tomatoes, and basil on our signature wood-fired crust.</p><div class="price">$14.99</div></div><div class="menu-item"><h3>Spaghetti Carbonara</h3><p>Traditional Roman pasta with eggs, pecorino cheese, guanciale, and black pepper.</p><div class="price">$16.99</div></div><div class="menu-item"><h3>Lasagna Bolognese</h3><p>Layers of pasta with rich meat sauce, béchamel, and parmesan cheese.</p><div class="price">$18.99</div></div><div class="menu-item"><h3>Risotto ai Funghi</h3><p>Creamy arborio rice with wild mushrooms, parmesan, and white wine.</p><div class="price">$17.99</div></div><div class="menu-item"><h3>Osso Buco</h3><p>Braised veal shanks in white wine with vegetables and gremolata.</p><div class="price">$26.99</div></div><div class="menu-item"><h3>Tiramisu</h3><p>Classic Italian dessert with espresso-soaked ladyfingers and mascarpone cream.</p><div class="price">$8.99</div></div></div></section>
+    <section id="home" class="hero"><div class="hero-content"><h1>Bella Italia</h1><p>Experience Authentic Italian & Nepali Cuisine</p><a href="#menu" class="btn">View Our Menu</a></div></section>
+    <section id="about" class="about"><h2>Our Story</h2><div class="about-content"><div class="about-text"><p>Welcome to Bella Italia, where Italian tradition meets Nepali flavors. We bring you the best of both worlds - authentic Italian cuisine and traditional Nepali dishes.</p><br><p>Our chefs use only the finest ingredients, combining Italian culinary expertise with local Nepali spices and fresh produce to create an unforgettable fusion dining experience.</p><br><p>Every meal is prepared with love, care, and passion. Join us for a unique culinary journey that celebrates both cultures.</p></div><div class="about-image"></div></div></section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-section">
+            <h3 class="menu-category">🍝 Italian Specialties</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><h3>Margherita Pizza</h3><p>Classic pizza with fresh mozzarella, tomatoes, and basil on our signature wood-fired crust.</p><div class="price">Rs. 1,200</div></div>
+                <div class="menu-item"><h3>Spaghetti Carbonara</h3><p>Traditional Roman pasta with eggs, pecorino cheese, guanciale, and black pepper.</p><div class="price">Rs. 1,400</div></div>
+                <div class="menu-item"><h3>Lasagna Bolognese</h3><p>Layers of pasta with rich meat sauce, béchamel, and parmesan cheese.</p><div class="price">Rs. 1,600</div></div>
+                <div class="menu-item"><h3>Risotto ai Funghi</h3><p>Creamy arborio rice with wild mushrooms, parmesan, and white wine.</p><div class="price">Rs. 1,500</div></div>
+                <div class="menu-item"><h3>Osso Buco</h3><p>Braised veal shanks in white wine with vegetables and gremolata.</p><div class="price">Rs. 2,200</div></div>
+                <div class="menu-item"><h3>Tiramisu</h3><p>Classic Italian dessert with espresso-soaked ladyfingers and mascarpone cream.</p><div class="price">Rs. 750</div></div>
+            </div>
+        </div>
+        <div class="menu-section">
+            <h3 class="menu-category">🇳🇵 Nepali Specialties</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><h3>Dal Bhat Set</h3><p>Traditional Nepali meal with lentil soup, rice, vegetable curry, pickle, and papad.</p><div class="price">Rs. 450</div></div>
+                <div class="menu-item"><h3>Momo (Chicken/Veg)</h3><p>Steamed dumplings filled with spiced chicken or vegetables, served with tomato chutney.</p><div class="price">Rs. 350</div></div>
+                <div class="menu-item"><h3>Newari Khaja Set</h3><p>Traditional Newari platter with beaten rice, grilled meat, boiled egg, and spicy potatoes.</p><div class="price">Rs. 650</div></div>
+                <div class="menu-item"><h3>Thukpa</h3><p>Hearty Tibetan-style noodle soup with vegetables and your choice of chicken or buff.</p><div class="price">Rs. 400</div></div>
+                <div class="menu-item"><h3>Sekuwa Set</h3><p>Grilled marinated meat (chicken/buff) with puffed rice, pickle, and roasted soybeans.</p><div class="price">Rs. 550</div></div>
+                <div class="menu-item"><h3>Juju Dhau</h3><p>Traditional Nepali sweet yogurt from Bhaktapur, creamy and delicious.</p><div class="price">Rs. 200</div></div>
+            </div>
+        </div>
+    </section>
     <section id="gallery" class="gallery"><h2>Gallery</h2><div class="gallery-grid"><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500')"></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=500')"></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500')"></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=500')"></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500')"></div><div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500')"></div></div></section>
     <section id="contact"><h2>Visit Us</h2><div class="contact-info"><div class="contact-card"><h3>📍 Location</h3><p>123 Italian Street<br>Kathmandu, Nepal</p></div><div class="contact-card"><h3>📞 Phone</h3><p>+977 1234567890<br>Reservations Welcome</p></div><div class="contact-card"><h3>🕐 Hours</h3><p>Mon-Fri: 11am - 10pm<br>Sat-Sun: 10am - 11pm</p></div><div class="contact-card"><h3>✉️ Email</h3><p>info@bellaitalia.com<br>events@bellaitalia.com</p></div></div></section>
     <footer><p>&copy; 2025 Bella Italia. All rights reserved. | Crafted with ❤️ on Bhindi</p></footer>
